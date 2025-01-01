@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "../css/Home.css"
 import Moviecard from "../components/Moviecard"
 
 
@@ -23,7 +24,7 @@ const [SeachQuery, setSearchQuery] = useState("")
                     className="search-input" 
                     value={SeachQuery}
                     onChange={(e)=>setSearchQuery(e.target.value)}/>
-                <button type="submit" className="search-btn">Search</button>
+                <button type="submit" className="search-button">Search</button>
             </form>
             <div className="movies-grid">
                 {movies.map((movie)=> 
